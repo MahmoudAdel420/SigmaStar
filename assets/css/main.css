@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+header {
+    width: 100%;
+    height: 100px;
+    background-color :white;
+    box-shadow: 0 0 10px;
+}
+header .row {
+    display: flex;
+    
+}
+header .row nav{
+    width: 85%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header.row nav ul{
+    display: flex;
+    list-style-type: none;
+}
+
+header.row nav ul li a{
+    display: flex;
+    text-decoration: none;
+}
