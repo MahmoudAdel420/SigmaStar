@@ -1,32 +1,333 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav .container{
+    width: 90%;
+    margin: auto;
 
 }
-header {
-    width: 100%;
-    height: 100px;
-    background-color :white;
-    box-shadow: 0 0 10px;
-}
-header .row {
-    display: flex;
-    
-}
-header .row nav{
-    width: 85%;
-    
+nav .container .row{
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+    padding: 10px 0;
 
-header.row nav ul{
+}
+nav .container .row ul{
     display: flex;
     list-style-type: none;
 }
-
-header.row nav ul li a{
-    display: flex;
+nav .container .row ul li{
+    padding: 10px;
+    margin-right: 5px;
+}
+nav .container .row ul li a{
     text-decoration: none;
+    color: gray;
+    transition: color 0.5s;
+    cursor: pointer;
+}
+nav .container .row ul li a:hover,
+nav .container .row ul li .active{
+    color: #0d6efd;
+}
+nav .container .row .logo{
+    font-family: Raleway,sans-serif;
+    color: gray;
+    font-size: 20px;
+
+}
+nav .container .row .logo .S1{
+    color: #fd7e14;
+}
+nav .container .row .logo .S2{
+    color: #0dcaf0;
+}
+nav .container .row button{
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px 25px;
+    margin-right: 600px;
+}
+nav .container .row button:hover{
+    background-color: #0d6efd;
+    color: white;
+    transition: 0.5s;
+}
+nav .container .row i{
+    display: none;
+}
+/************** section-1********* */
+main .section-1 .container{
+    width: 85%;
+    margin: auto;
+}
+main .section-1 .container .row{
+    display: flex;
+    align-items: center;
+    text-align: right;
+}
+main .section-1 .container .row .intro h2{
+    font-size: 50px;
+    font-family: Raleway,sans-serif;
+    color: rgb(58, 58, 58);
+    width: 95%;
+    line-height: 56px;
+
+
+}
+main .section-1 .container .row .intro p{
+    font-size: 24px;
+    color: gray;
+    width: 95%;
+    margin: 10px 0px 30px 0px;
+    text-align: right;
+}
+main .section-1 .container .row .intro button{
+padding: 10px 30px;
+margin-right: 40px;
+background-color: #0dcaf0;
+color: white;
+border-radius: 5px;
+border: 0;
+font-size: 20px;
+box-shadow: 0 0 20px rgb(0, 161, 54);
+
+}
+main .section-1 .container .row .intro button:hover{
+    background-color: #0d6efd;
+    transition: 0.5s;
+}
+main .section-1 .container .row img{
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+@keyframes up-down{
+
+    0%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+   
+    
+   
+}
+
+/************** section-2********* */
+main .section-2 .container{
+    width: 85%;
+    margin: auto;
+}
+main .section-2 .container .row{
+    display: flex;
+    align-items: center;
+    text-align: right;
+}
+main .section-2 .container .row .part-1 ,main .section-2 .container .row .part-2{
+    width: 50%;
+    display: block;
+    height: 200px;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: gainsboro;
+    margin: 15px;
+}
+main .section-2 .container .row .part-1 .icon-1 ,main .section-2 .container .row .part-2 .icon-2
+    {
+    display: block;
+    margin: 15px 0;
+    font-size: 30px;
+    margin: 15px;
+    color:#0d6efd
+}
+main .section-2 .container .row .part-1 a,main .section-2 .container .row .part-2 a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600px;
+    color: rgb(45, 44, 44);
+    margin: 15px;
+    
+}
+main .section-2 .container .row .part-1 p,main .section-2 .container .row .part-2 p{
+    margin: 15px;
+    color: rgb(66, 66, 66);
+}
+main .section-2 .container .row .part-1:hover{
+    border: 1px solid rgb(161, 161, 161);
+}
+main .section-2 .container .row .part-2:hover{
+    border: 1px solid rgb(161, 161, 161);
+}
+main .section-2 .container .row .part-1 a:hover ,main .section-2 .container .row .part-2 a:hover{
+    color: #0d6efd;
+}
+/************** section-3********* */
+main .section-3 .container{
+    width: 85%;
+    margin: auto;
+}
+main .section-3 .container .row{
+    display: flex;
+    align-items: center;
+    text-align: right;
+    padding :20px;
+}
+main .section-3 .container .row .about {
+    width: 50%;
+    margin: 10px;
+}
+main .section-3 .container .row .about h3{
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: rgb(84, 83, 83);
+}
+main .section-3 .container .row .img img{
+    width: 80%;
+    height: fit-content;
+
+}
+/************** section-4********* */
+main .section-4 {
+    background-color: aliceblue;
+}
+main .section-4 .container{
+    width: 85%;
+    margin: auto;
+}
+main .section-4 .container .row{
+    display: flex;
+    align-items: center;
+    text-align: right;
+    padding :20px;
+}
+.titlle-1{
+    text-align: center;
+}
+main .section-4 .container .row .services{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    flex-wrap: wrap;
+    margin-top: 15px;
+
+}
+main .section-4 .container .row .services .item{
+    width: 20%;
+    height: 125px;
+    padding: 20px 15px;
+    align-items: center;
+    text-align: center;
+    margin: 3px;
+    background-color: white;
+}
+main .section-4 .container .row .services .item .icon-2{
+    align-items: center;
+    height: 50%;
+    font-size: 30px;
+    margin-bottom: 5px;
+    color: #0dcaf0;
+}
+main .section-4 .container .row .services .item .icon-2 .item-{
+    align-items: center;
+    height: 50%;
+}
+main .section-4 .container .row .services .item .icon-2 .item- h4{
+    font-size: 30px;
+}
+h4{
+    font-size: 25px;
+}
+h3{
+    font-size: 30px;
+    margin: 15px;
+}
+h4:hover{
+    color: #0dcaf0;
+    transition: 0.5s;
+}
+main .section-4 .container .row .services .item:hover{
+    border: 0.5px solid #0dcaf0;
+}
+.titlle-2,.titlle-3{
+    margin: 200px;
+    text-align: center;
+
+}
+
+/************** section-5********* */
+main .section-5 .container{
+    width: 85%;
+    margin: auto;
+}
+main .section-5 .container .row{
+    display: flex;
+    align-items: center;
+    text-align: right;
+    padding-top :20px;
+    margin: auto;
+    justify-content: space-between;
+}
+main .section-5 .container .row .info {
+    display: inline-block;
+    width: 45%;
+    margin: 5px;
+    background-color: azure;
+    border-top: 4px solid #0d6efd;
+    border-bottom: 4px solid #0d6efd;
+
+}
+main .section-5 .container .row .info iframe{
+    width: 100%;
+    padding: 20px;
+}
+main .section-5 .container .row form{
+    background-color: azure;
+    border-top: 4px solid #0d6efd;
+    border-bottom: 4px solid #0d6efd;
+    height:659px;
+    display: block;
+    text-align:right;
+    padding-right: 25px;
+    justify-content: center;
+
+}
+main .section-5 .container .row form .name label{
+    display: block;
+}
+main .section-5 .container .row form .email label{
+    display: block;
+}
+main .section-5 .container .row form .topic label{
+    display: block;
+}
+main .section-5 .container .row form  .message label{
+    display: block;
+}
+main .section-5 .container .row form input{
+    margin: 10px;
+    border:1px solid gray;
+    border-radius: 5px;
+    width: 170px;
+    
+}
+main .section-5 .container .row form textarea{
+    width: 90%;
+}
+main .section-5 .container .row form button{
+    padding: 10px 30px;
+margin: auto;
+background-color: #0dcaf0;
+color: white;
+border-radius: 5px;
+border: 0;
+font-size: 20px;
+
 }
